@@ -16,6 +16,7 @@ document.getElementById('formid').addEventListener('submit',submitFrom);
 
 function submitFrom(e){
     e.preventDefault();
+   
     
     var teamName = getInputval('teamName');
     //Participant 1
@@ -24,6 +25,7 @@ function submitFrom(e){
     var dpt1 = getInputval('m1dpt');
     var email1 = getInputval('m1email');
     var phone1= getInputval('m1phone');
+    var shirt1 =getInputval('m1shirt');
     
         
     //Participant 2
@@ -32,6 +34,7 @@ function submitFrom(e){
     var dpt2 = getInputval('m2dpt');
     var email2 = getInputval('m2email');
     var phone2= getInputval('m2phone');
+    var shirt2 =getInputval('m2shirt');
     
         
     //Participant 2
@@ -40,6 +43,7 @@ function submitFrom(e){
     var dpt3 = getInputval('m3dpt');
     var email3 = getInputval('m3email');
     var phone3= getInputval('m3phone');
+    var shirt3 =getInputval('m3shirt');
     
     var  data= {
         team:teamName,
@@ -48,19 +52,22 @@ function submitFrom(e){
             roll:roll1,
             dpt:dpt1,
             emaill:email1,
-            phone:phone1
+            phone:phone1,
+            shirt:shirt1
         },m2:{
             name:name1,
             roll:roll1,
             dpt:dpt1,
             emaill:email1,
-            phone:phone1
+            phone:phone1,
+            shirt:shirt2
         },m3:{
             name:name1,
             roll:roll1,
             dpt:dpt1,
             emaill:email1,
-            phone:phone1
+            phone:phone1,
+            shirt:shirt3
         },
         status:"Pending"
     };
@@ -68,16 +75,7 @@ function submitFrom(e){
     console.log(data);
     SaveMessage(data);
     
-       //Show alert 
-    document.querySelector('.alert').style.display='block';
-    
-    //Hide alert after 3 seconds
-    setTimeout(()=>{
-        document.querySelector('.alert').style.display='none';
-    
-    },3000);
-    
-    document.getElementById('formid').reset();
+     
   
 }
 
@@ -93,7 +91,18 @@ function getInputval(id){
 
 function SaveMessage(data){
     var PushID=acmTeamData.push();
-    PushID.set(data);
+    PushID.set(data).then(()=>{
+          //Show alert 
+    document.querySelector('.alert').style.display='block';
+    
+    //Hide alert after 3 seconds
+    setTimeout(()=>{
+        document.querySelector('.alert').style.display='none';
+    
+    },3000);
+    
+    document.getElementById('formid').reset();
+    });
 }
 
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +8,16 @@
   <meta name="description" content="">
   <!-- Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">  
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/siulogo.jpg"/>
+  <link rel="icon" href="images/logo.png"/>
 </head>
-<body>
-
-
+<body >
 
   <div class="headeras">
-
-
     <nav class="navbar navbar-default ploting_nav">
       <div class="container">
-
-
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,59 +26,40 @@
             <span class="icon-bar bar2"></span>
             <span class="icon-bar bar3"></span>
           </button>
-          <a class="navbar-brand brand_image" href="#"><img alt="" src="images/siulogo.jpg"></a>
-          <a class="navbar-brand brand_image" href="#"><p>SIU ICT FEST 2017</p></a>
-
+          <a class="navbar-brand brand_image" href="#"><img alt="" src="images/logo.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
           <ul class="nav navbar-nav navbar-right">
             <li ><a href="index.html">Home</a></li>
-
-
-           <li> 
+            <li><a href="#" onclick="alert('Team List will be published soon!!');">Teams</a></li>
+            <li><a href="#contact"  class="contactus">Contact Us</a></li>
+            <li> 
               <div class="dropdown show dropdown-custom">
-                <a class="btn btn-secondary dropdown-toggle dropdown-btn"id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
+                <a class="btn btn-secondary dropdown-toggle dropdown-btn" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="acmform.html">Programming Contest</a>
-                  <a class="dropdown-item" href="hackathon.html">Hackathon </a><br>
-                  <a class="dropdown-item" href="projectshowcasing.html">Project Showcasing</a>
+                  <a class="dropdown-item" href="forms/acmform.html">Programming Contest</a>
+                  <a class="dropdown-item" href="forms/hackathonform.html">Hackaton</a>
+                  <a class="dropdown-item" href="forms/projectforms.html">Project Showcasing</a>
                 </div>
               </div>
-            </li>
-
-
-            <li><a  onclick="alert('Team will be added soon')">Teams</a></li>
-            <li><a href="#contact"  class="contactus">Contact Us</a></li>
-            
-
-
-
-            
+            </li>            
           </ul>
         </div>
       </div>
     </nav>  
   </div>
 
-
-
-
-
   <div class="particle-show" id="particles-js">
-    <div class="event-icons text-center">
-    </div>    
   </div>
 
   <div class="section time-section">
     <div class="time-left">
-      <div class="container">
-        <div class="text-center">
+      <div class="sec2-header text-center custom-header">
           <h1>TIME LEFT</h1>
         </div>
-
+      <div class="container">
         <div class="time-left-div text-center">
           <div class="time-counter">
             <span id="showDay">00</span>
@@ -98,12 +73,10 @@
             <span id="showMin">00</span>
             <p>Minutes</p>
           </div>
-
           <div class="time-counter">
             <span id="showSec">00</span>
             <p>Seconds</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -111,9 +84,8 @@
 
 
   <div class="event-sec section">
-    <div class="sec3-header text-center">
+    <div class="sec3-header text-center custom-header">
       <h1>EVENTS</h1>
-      <p>Register and Win Exciting Prizes </p>
     </div>
     <div class="events">
       <div class="container">
@@ -122,13 +94,13 @@
             <div class="xitem programming">
               <div class="itemBody">
                 <div class="initembody text-center">
-                  <p>Programming Contest</p>
-
+                  
                 </div>
               </div>
               <div class="hoverDiv">
-                <a href="acmform.html">Register</a>
-                <a href="">View Rules</a>
+                <p>Programming Contest</p>
+                <a href="forms/acmform.html">Register</a>
+                <a href="rules/acmRules.html">View Rules</a>
               </div>
             </div>
           </div>
@@ -136,12 +108,12 @@
             <div class="xitem hackathon">
               <div class="itemBody">
                 <div class="initembody text-center">
-                  <p>Hackathon</p>
                 </div>
               </div>
               <div class="hoverDiv">
-                <a href="hackathon.html">Register</a>
-                <a href="">View Rules</a>
+                <p>Hackathon</p>
+                <a href="forms/hackathonform.html">Register</a>
+                <a href="rules/hackathonRules.html">View Rules</a>
               </div>
             </div>
           </div>
@@ -149,12 +121,12 @@
             <div class="xitem projectshow">
               <div class="itemBody">
                 <div class="initembody text-center">
-                  <p>Project Showcasing</p>
                 </div>
               </div>
               <div class="hoverDiv">
-                <a href="projectshowcasing.html">Register</a>
-                <a href="">View Rules</a>
+                <p>Project Showcasing</p>
+                <a href="forms/projectforms.html">Register</a>
+                <a href="rules/projectRules.html">View Rules</a>
               </div>
             </div>
           </div>
@@ -171,56 +143,61 @@
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <div class="image-circle-slider image-small2 active" data-target="#myCarousel" data-slide-to="0" >
-               <img src="images/team/job2.jpg" alt="" class="img-responsive">
+              
+              <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="0" >
+                <p>Steve Jobs</p>
+                <img src="images/team/job2.jpg" alt="" class="img-responsive">
              </div>
+
              <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="1" >
-               <img src="images/team/mark2.jpg" alt="" class="img-responsive">
+                <p>Mark Zuckerberg</p>
+                <img src="images/team/mark2.jpg" alt="" class="img-responsive">
              </div>
-                <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="3" >
-               <img src="images/team/elon.jpg" alt="" class="img-responsive">
+
+             <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="2" >
+                <p> Warren Buffett</p>
+                <img src="images/team/buffet.jpg" alt="" class="img-responsive">
              </div>
-                
-                    <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="4" >
-               <img src="images/team/buffet.jpg" alt="" class="img-responsive">
+
+             <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="3" >
+                <p>Jack Ma</p>
+                <img src="images/team/jack2.jpg" alt="" class="img-responsive">
              </div>
-                
-                      <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="4" >
-               <img src="images/team/jack2.jpg" alt="" class="img-responsive">
+
+             <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="4" >
+                <p>Bill Gates</p>
+                <img src="images/team/bill.jpg" alt="" class="img-responsive">
              </div>
-                
-                          <div class="image-circle-slider image-small2" data-target="#myCarousel" data-slide-to="4" >
-               <img src="images/team/bill.jpg" alt="" class="img-responsive">
-             </div>
-                
+
            </ol>
            <!-- Wrapper for slides -->
-           <div class="carousel-inner">
-            <div class="item active text-center">
-              <h1 style="color: white">“Your time is limited, so don’t waste it living someone else’s life.”
-― Steve Jobs</h1>
+           <div class="carousel-inner">      
+                 <div class="item active text-center">
+              <h1 style="color: white">“Your time is limited, so don’t waste it living someone else’s life.”</h1>
             </div>
             <div class="item text-center">
-             <h1 style="color: white"> “The biggest risk is not taking any risk. In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.” - Mark Zuckerberg</h1>
+             <h1 style="color: white"> “The biggest risk is not taking any risk. In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.”</h1>
            </div>
-               <div class="item text-center">
-             <h1 style="color: white"> “When something is important enough, you do it even if the odds are not in your favor.” - Elon Musk</h1>
-           </div>
-               
+            
                   <div class="item text-center">
-             <h1 style="color: white"> “The most important investment yoi can make is in yourself...Nobody can tax it or take it away from you” -Warren Buffett</h1>
+             <h1 style="color: white"> “The most important investment yoi can make is in yourself...Nobody can tax it or take it away from you”</h1>
            </div>
                
                
                        <div class="item text-center">
-             <h1 style="color: white"> “Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.” -Jack Ma</h1>
+             <h1 style="color: white"> “Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.”</h1>
            </div>
                
                
                              <div class="item text-center">
-             <h1 style="color: white"> “Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself.” -Bill Gates</h1>
+             <h1 style="color: white"> “Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself.”</h1>
            </div>
-               
+                
+                
+                
+            </div>
+
+
          </div>
          <!-- Left and right controls -->
          <a class="carousel-control controller-left text-left" href="#myCarousel" data-slide="prev">
@@ -233,13 +210,13 @@
         </a>
       </div>
     </div>
+    </div>
+    </div>
   </div>
-</div>
-</div>
 
 
 <div class="section section-team " id="contact">
-  <div class="text-center">
+  <div class="team-header text-center custom-header">
     <h1>Organized By</h1>
   </div>
   <div class="team-two-members container ">
@@ -298,7 +275,6 @@
   </div>
 </div>
 </div>
-
 <!--Footer-->
 <footer class="footer">
   <div class="container">
@@ -307,26 +283,26 @@
         <p>SIU ICT FEST 2017</p>
       </div>
       <div class="col-md-6">
-        <p>
-          <!--                    <a href="https://www.facebook.com/csesiu/" target="_blank"> </a>-->
-          Developed by Asad, Nuhel & Shuvojit
-        </p>
+        <p>Developed by Asad, Nuhel & Shuvojit</p>
       </div>
     </div>
   </div>
 </footer>
+
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 <script src="https://use.fontawesome.com/fa2c145b6a.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="js/TweenMax.js"></script>
+<script src="js/particals.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/wow.js"></script>
+ <script>
+  new WOW().init();
+</script>
 <script type="text/javascript">
     // Set the date we're counting down to
-    var countDownDate = new Date("Oct 25, 2017 09:00:00").getTime();
-
+    var countDownDate = new Date("Oct 28, 2017 09:00:00").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {
       var now = new Date().getTime();
@@ -345,28 +321,6 @@
       }
     }, 1000);
   </script>
-
-  <script>
-    new WOW().init();
-  </script>
-    
-    
-    
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/59eb28cfc28eca75e4627502/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-    
-    
-    
+ 
 </body>
 </html>
