@@ -1,11 +1,11 @@
-// Initialize Firebase
+ // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBnoouZ86Wd5AxKzXV-82QOsowa81zOBU8",
-    authDomain: "siuictfest-17f81.firebaseapp.com",
-    databaseURL: "https://siuictfest-17f81.firebaseio.com",
-    projectId: "siuictfest-17f81",
-    storageBucket: "siuictfest-17f81.appspot.com",
-    messagingSenderId: "891213467504"
+    apiKey: "AIzaSyDbo-PX3Xd4e8QSHBFk6OGAOhODLcShg0c",
+    authDomain: "siuictfest-81cc2.firebaseapp.com",
+    databaseURL: "https://siuictfest-81cc2.firebaseio.com",
+    projectId: "siuictfest-81cc2",
+    storageBucket: "",
+    messagingSenderId: "985132371852"
   };
   firebase.initializeApp(config);
 
