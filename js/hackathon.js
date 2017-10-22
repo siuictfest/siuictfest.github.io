@@ -56,18 +56,18 @@ function submitFrom(e){
             phone:phone1,
             shirt:shirt1
         },m2:{
-            name:name1,
-            roll:roll1,
-            dpt:dpt1,
-            emaill:email1,
-            phone:phone1,
+            name:name2,
+            roll:roll2,
+            dpt:dpt2,
+            emaill:email2,
+            phone:phone2,
             shirt:shirt2
         },m3:{
-            name:name1,
-            roll:roll1,
-            dpt:dpt1,
-            emaill:email1,
-            phone:phone1,
+            name:name3,
+            roll:roll3,
+            dpt:dpt3,
+            emaill:email3,
+            phone:phone3,
             shirt:shirt3
         },
         status:"Pending"
