@@ -47,6 +47,11 @@
   color: white;
 }
 
+.hoverDiv a:hover{
+  color: black;
+  border: 1px solid blue;
+}
+
 .xitem:hover .hoverDiv{
   top: 0;
   background: rgba(100,100,100,.9);
