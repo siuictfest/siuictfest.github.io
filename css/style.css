@@ -477,16 +477,30 @@ hr.line {
 }
 
 
-<----------------------------------------->
 .rules{
-  padding: 40px;
+  background-color: #daf4f7;
 }
+
 .view{
-  background-color: #f3fab6;
-  text-align: left;
-  color: #7D1935;
-  padding: 50px;
+  text-align: justify;
+  color: #2f2f2f;
+  padding:50px;
   font-size: 17px;
+  
+}
+
+.rules h1{
+  background: #daf4f7;
+}
+
+.view ul li{
+  text-align: justify;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.view ul, .view li{
+  margin: 0;
 }
 
 .thanks-to{
