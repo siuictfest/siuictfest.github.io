@@ -1,7 +1,7 @@
 
 @font-face {
-font-family: "digital-7-italic";
-src: url("../fonts/digital-7-italic.ttf");
+  font-family: "digital-7-italic";
+  src: url("../fonts/digital-7-italic.ttf");
 }
 
 .section{
@@ -194,29 +194,6 @@ src: url("../fonts/digital-7-italic.ttf");
   }
 }
 
-
-
-.floating-button{
-  color: #fff;
-  margin-right: 40px;
-  margin-left: 40px;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-
-.floating-button:hover {
-  box-shadow: 3px 3px 2px 1px rgba(34, 34, 34, .5);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-
-}
-
-
 .hackathon{
  background: url("../images/hackathonbckg.png");
  background-size: 100% 100%; 
@@ -335,18 +312,13 @@ hr.line {
 
 .quots{
   background: #614385;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 400px;
 }
 
 .carousel{
   height: 300px;
-}
-
-.developer{
-  padding: 20px;
-  box-shadow: 0 1px 4px 0px;
 }
 
 .section-team{
@@ -385,21 +357,9 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
 }
 
 .dropdown-menu a{
+  color: white !important;
   display: inline-block;
 }
-
-.dropdown-custom:hover >.dropdown-menu{
-  visibility: visible;
-  display: block;
-  top: 100%;
-  margin: 0px 0 0;
-  color: green;
-}
-
-.dropdown-menu a{
-  color: green !important;
-}
-
 
 .sec2-header h1{
   padding: 0;
@@ -439,7 +399,6 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
   max-width: 620px;
   padding: 20px;
   margin: auto;
-  
 }
 
 .custom-header h1{
@@ -490,12 +449,6 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
   display: inline-block;
 }
 
-.image-circle-slider.image-small2{
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70px;
-}
 
 .image-circle-slider.image-small2 img {
   padding: 1px;
@@ -533,26 +486,92 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
   padding: 40px;
 }
 .view{
-
-
-background-color: #f3fab6;
+  background-color: #f3fab6;
   text-align: left;
   color: #7D1935;
-
   padding: 50px;
   font-size: 17px;
-
 }
-.view ul{
-    margin-top: 30px
-}
-
 
 .thanks-to{
   padding: 20px;
-  margin: 10 70px;
+  max-width: 375px;
+  width: 100%;
+  margin: 30px auto;
   box-shadow: 0 1px 4px 0px;
+}
+.image-circle-slider.image-small2{
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 
 
+.developer{
+  padding: 20px;
+  box-shadow: 0 1px 4px 0px;
+  margin: 30px 0;
+}
 
+
+.dropdown-menu a:hover{
+
+text-decoration: none;
+
+  }
+
+
+@media only screen and (max-width: 767px) {
+
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+  .navbar-nav{
+    margin-top: 16px;
+    background-color: rgba(0, 153, 142,.8);
+    border: 0;
+  }
+
+  .navbar-collapse{
+    border: 0;
+  }
+  .navbar-toggle{
+    background: transparent;
+    color: white;
+    border: 0;
+  }
+
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background: transparent;
+  }
+
+  .dropdown-menu{
+    padding-left: 20px;
+  }
+
+  .dropdown-menu a{
+    margin-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid white;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .dropdown-custom:hover >.dropdown-menu{
+    visibility: visible;
+    display: block;
+    top: 100%;
+    margin: 0px 0 0;
+    background-color: rgba(0, 153, 142,.8);
+  }
+
+  .dropdown-menu a{
+  color: white !important;
+  display: block;
+  }
+}
