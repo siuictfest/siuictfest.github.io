@@ -508,7 +508,7 @@ hr.line {
   padding: 20px 10px;
   max-width: 375px;
   width: 100%;
-  margin: 30px auto;
+  margin: 0 auto;
   box-shadow: 0 1px 4px 0px;
 }
 .image-circle-slider.image-small2{
@@ -624,4 +624,8 @@ hr.line {
   .carousel-inner .item h1{
     font-size: 25px;
   }
+}
+
+.teacher-header h1{
+  background: white;
 }
