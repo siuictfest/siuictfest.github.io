@@ -499,8 +499,9 @@ hr.line {
   width: 100%;
 }
 
-.view ul, .view li{
+.view ul, .view li, .view b{
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .thanks-to{
