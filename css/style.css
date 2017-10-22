@@ -255,13 +255,14 @@ hr.line {
   height: 0;
 }
 .social-icons ul li > a {
-  border: 1px solid #eee;
+  border: 1px solid #ff8724;
   color: #ff8724;
   display: inline-block;
   height: 32px;
   padding-top: 6px;
   text-align: center;
   width: 32px;
+  border-radius: 50%;
 }
 .social-icons ul li > a:hover {
   background: #ff8724;
