@@ -518,6 +518,7 @@ hr.line {
 .dropdown-menu a:hover{
 
 text-decoration: none;
+color: black !important;
 
   }
 
