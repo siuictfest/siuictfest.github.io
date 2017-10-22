@@ -576,3 +576,10 @@ color: black !important;
   display: block;
   }
 }
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+  background: transparent;
+  border: none;
+}.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+  background: transparent;
+  border: none;
+}
