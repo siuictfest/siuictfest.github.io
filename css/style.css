@@ -476,16 +476,6 @@ hr.line {
   height: 100px;
 }
 
-.carousel-indicators p {
-  color: white;
-  opacity: 0;
-}
-.image-circle-slider:hover p{
-  opacity: 1;
-}
-
-
-
 
 <----------------------------------------->
 .rules{
@@ -580,5 +570,43 @@ hr.line {
   .dropdown-menu a{
   color: white !important;
   display: block;
+  }
+}
+
+
+.indicator-holder{
+  position: relative;
+}
+
+.indicator-holder p{
+  top: 102%;
+  position: absolute;
+  opacity: 0;
+  color: white;
+}
+
+
+@media only screen and (min-width: 650px) {
+  .indicator-holder:hover p{
+    top: 0;
+    opacity: 1;
+    transition: .3s all;
+  }
+
+  .indicator-holder{
+    padding-top: 45px;
+  }
+}
+
+
+@media only screen and (max-width: 618px) {
+  .carousel-inner .item h1{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel-inner .item h1{
+    font-size: 25px;
   }
 }
