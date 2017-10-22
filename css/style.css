@@ -28,7 +28,6 @@
   
 }
 
-
 .hoverDiv {
   position: absolute;
   z-index: 9;
@@ -45,6 +44,12 @@
   display: block;
   text-decoration: none;
   color: white;
+}
+
+
+.hoverDiv a:hover{
+  color: black;
+  border: 1px solid blue;
 }
 
 .xitem:hover .hoverDiv{
@@ -361,6 +366,7 @@ hr.line {
   display: inline-block;
 }
 
+
 .sec2-header h1{
   padding: 0;
   padding-bottom: 50px;
@@ -471,7 +477,7 @@ hr.line {
 }
 
 .carousel-indicators p {
-  color: green;
+  color: white;
   opacity: 0;
 }
 .image-circle-slider:hover p{
@@ -494,7 +500,7 @@ hr.line {
 }
 
 .thanks-to{
-  padding: 20px;
+  padding: 20px 10px;
   max-width: 375px;
   width: 100%;
   margin: 30px auto;
@@ -509,35 +515,35 @@ hr.line {
 
 
 .developer{
-  padding: 20px;
+  padding: 20px 10px;
   box-shadow: 0 1px 4px 0px;
   margin: 30px 0;
 }
 
 
 .dropdown-menu a:hover{
-
-text-decoration: none;
-color: black !important;
-
+  text-decoration: none;
+  color: black !important;
   }
 
 
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+  background: transparent;
+  border: none;
+}
+
+
 @media only screen and (max-width: 767px) {
-
-
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
   background: transparent;
   color: white;
   border: none;
 }
-
   .navbar-nav{
     margin-top: 16px;
     background-color: rgba(0, 153, 142,.8);
     border: 0;
   }
-
   .navbar-collapse{
     border: 0;
   }
@@ -575,11 +581,4 @@ color: black !important;
   color: white !important;
   display: block;
   }
-}
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
-  background: transparent;
-  border: none;
-}.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
-  background: transparent;
-  border: none;
 }
