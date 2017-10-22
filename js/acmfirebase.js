@@ -94,6 +94,8 @@ function SaveMessage(data){
     PushID.set(data).then(()=>{
           //Show alert 
     document.querySelector('.alert').style.display='block';
+        
+         alert("Your registration has been sucessfully completed.... :)");
     
     //Hide alert after 3 seconds
     setTimeout(()=>{
