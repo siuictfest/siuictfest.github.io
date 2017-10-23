@@ -630,3 +630,8 @@ hr.line {
 .teacher-header h1{
   background: white;
 }
+marquee{
+	color: red;
+	font-style: bold;
+	font-size: 35px;
+}
