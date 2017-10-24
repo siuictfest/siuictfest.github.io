@@ -13,9 +13,11 @@
 }
 
 
+/*
 body{
   background: url("../images/formbg.jpg") no-repeat;
 }
+*/
 
 .edit-text,
 .sub-btn{
@@ -167,3 +169,24 @@ body{
     margin-bottom: 10px;
     display: none;
 }
+
+
+
+        @keyframes  blink {  
+    0% { color: red; }
+    100% { color: black; }
+}
+@-webkit-keyframes blink {
+    0% { color: red; }
+    100% { color: black; }
+}
+.blink {
+    margin: 50px;
+    padding: 50px;
+    
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    -ms-animation: blink 1s linear infinite;
+    -o-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+} 
