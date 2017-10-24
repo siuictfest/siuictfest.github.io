@@ -1,7 +1,7 @@
-
 .responstable {
-  margin: 1em 0;
-  width: 100%;
+  margin: 2% 0;
+  margin-left: 10%;
+  width: 80%;
   overflow: hidden;
   background: #FFF;
   color: #024457;
@@ -86,4 +86,10 @@
 
 .accepted td{
   /*background-color: green; add background here on accepted*/
+}
+.teamsec h1{
+  font-family: 'Lobster', cursive;
+  position: relative;
+  text-align: center;
+  color: red;
 }
