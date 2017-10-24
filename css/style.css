@@ -482,10 +482,6 @@ hr.line {
   background-color: #daf4f7;
 }
 
-.schedule{
-  background-color: #FFFFFF;
-}
-
 .view{
   text-align: justify;
   color: #2f2f2f;
@@ -513,8 +509,8 @@ hr.line {
   padding: 20px 10px;
   max-width: 375px;
   width: 100%;
-  margin: 0 auto;
   box-shadow: 0 1px 4px 0px;
+  margin: 20px 0;
 }
 .image-circle-slider.image-small2{
   height: auto;
@@ -618,6 +614,11 @@ hr.line {
   }
 }
 
+marquee{
+	color: red;
+	font-style: bold;
+	font-size: 35px;
+}
 
 @media only screen and (max-width: 618px) {
   .carousel-inner .item h1{
@@ -634,8 +635,14 @@ hr.line {
 .teacher-header h1{
   background: white;
 }
-marquee{
-	color: red;
-	font-style: bold;
-	font-size: 35px;
+
+
+.teachers{
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.owl-carousel {
+  padding-left: 2%;
 }
