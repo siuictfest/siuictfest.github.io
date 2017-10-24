@@ -1,12 +1,4 @@
-/*
 
-RESPONSTABLE 2.0 by jordyvanraaij
-  Designed mobile first!
-
-If you like this solution, you might also want to check out the 1.0 version:
-  https://gist.github.com/jordyvanraaij/9069194
-
-*/
 .responstable {
   margin: 1em 0;
   width: 100%;
@@ -77,25 +69,20 @@ If you like this solution, you might also want to check out the 1.0 version:
 }
 
 
-
-h1 {
+.responstable h1 {
   font-family: Verdana;
   font-weight: normal;
   color: #024457;
 }
-h1 span {
+.responstable h1 span {
   color: #167F92;
 }
 
 
-/*
 .pending td{
   background-color: red;
 }
-*/
-.teamsec{
-    margin-top: 30px;   
-}
+
 
 .accepted td{
   /*background-color: green; add background here on accepted*/
