@@ -40,7 +40,7 @@ Acm.on("child_added",snap=>{
     var p1 = snap.child('m1').child('name').val();
     var p2 = snap.child('m2').child('name').val();
     var p3 = snap.child('m3').child('name').val();
-//    var pending = snap.child('status').val();
+   var pending = snap.child('status').val();
 //    pending = pending.toLowerCase();
 //    var classname = ' class="'+pending+'"';
    console.log(p1);
@@ -49,7 +49,7 @@ Acm.on("child_added",snap=>{
 
 
     var table = document.getElementById("myTable");
-    var data = "<tr><td>"+team+"</td><td>"+p1+"</td><td>"+p2+"</td><td>"+p3+"</td></tr>";
+    var data = "<tr><td>"+team+"</td><td>"+p1+"</td><td>"+p2+"</td><td>"+p3+"</td><td>"+pending+"</td></tr>";
     table.innerHTML +=data;
     
 });
@@ -60,7 +60,7 @@ Hack.on("child_added",snap=>{
     var p1 = snap.child('m1').child('name').val();
     var p2 = snap.child('m2').child('name').val();
     var p3 = snap.child('m3').child('name').val();
-//    var pending = snap.child('status').val();
+   var pending = snap.child('status').val();
 //    pending = pending.toLowerCase();
 //    var classname = ' class="'+pending+'"';
 //    console.log(p1);
@@ -69,7 +69,7 @@ Hack.on("child_added",snap=>{
 
 
     var table = document.getElementById("myTable2");
-    var data = "<tr><td>"+team+"</td><td>"+p1+"</td><td>"+p2+"</td><td>"+p3+"</td></tr>";
+    var data = "<tr><td>"+team+"</td><td>"+p1+"</td><td>"+p2+"</td><td>"+p3+"</td><td>"+pending+"</td></tr>";
     table.innerHTML +=data;
 });
 
@@ -79,12 +79,12 @@ Pro.on("child_added",snap=>{
      var team = snap.child('proejcetName').val();
     var p1 = snap.child('m1').child('name').val();
 
-//    var pending = snap.child('status').val();
+  var pending = snap.child('status').val();
 //    pending = pending.toLowerCase();
 //    var classname = ' class="'+pending+'"';
 
     var table = document.getElementById("myTable3");
-    var data = "<tr><td>"+team+"</td><td>"+p1+"</td></tr>";
+    var data = "<tr><td>"+team+"</td><td>"+p1+"</td><td>"+pending+"</td></tr>";
     table.innerHTML +=data;
 });
 
