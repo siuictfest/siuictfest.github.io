@@ -91,27 +91,27 @@ function getInputval(id){
 //push data to firebase
 
 function SaveMessage(data){
-    var PushID=acmTeamData.push();
-    PushID.set(data).then(()=>{
-            //Show alert 
-    document.querySelector('.alert').style.display='block';
-        
-         alert("Your registration has been sucessfully completed.... :)");
-    
-    //Hide alert after 3 seconds
-    setTimeout(()=>{
-        document.querySelector('.alert').style.display='none';
-    
-    },3000);
-    
-    document.getElementById('formid').reset();
-    });
-    
+//    var PushID=acmTeamData.push();
+//    PushID.set(data).then(()=>{
+//            //Show alert 
+//    document.querySelector('.alert').style.display='block';
+//        
+//         alert("Your registration has been sucessfully completed.... :)");
 //    
-//     
-//    alert("Oops....Registration Closed !!!");
+//    //Hide alert after 3 seconds
+//    setTimeout(()=>{
+//        document.querySelector('.alert').style.display='none';
+//    
+//    },3000);
 //    
 //    document.getElementById('formid').reset();
+//    });
+    
+    
+     
+    alert("Oops....Registration Closed !!!");
+    
+    document.getElementById('formid').reset();
 }
 
 
