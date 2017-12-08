@@ -10,7 +10,7 @@
 .particle-show{
   background: url("../images/contest-bckg.jpg");
   background-size: 50% 50%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
